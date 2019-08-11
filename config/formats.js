@@ -1386,6 +1386,17 @@ let Formats = [
 		ruleset: ['Pokemon', 'Standard'],
 		banlist: ['Uber'],
 	},
+	{
+		name: "[Gen 1] The Indigo Meta",
+		threads: [
+			`&bullet; <a href="https://www.smogon.com/forums/threads/3572352/">RBY OU Viability Ranking</a>`,
+			`&bullet; <a href="https://www.smogon.com/forums/threads/3650478/#post-8133786">RBY Sample Teams</a>`,
+		],
+
+		mod: 'indigo',
+		ruleset: ['Pokemon', 'Standard'],
+		banlist: ['Uber'],
+	},
 
 	// OR/AS Singles
 	///////////////////////////////////////////////////////////////////
