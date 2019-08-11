@@ -8,7 +8,7 @@ let BattleScripts = {
 		for (let i in this.data.Pokedex) {
 			delete this.data.Pokedex[i].abilities['H'];
 		}
-		let specialTypes = ['Fire', 'Water', 'Grass', 'Ice', 'Electric', 'Dark', 'Psychic', 'Dragon'];
+		let specialTypes = ['Fire', 'Water', 'Grass', 'Ice', 'Electric', 'Dark', 'Psychic', 'Ghost'];
 		let newCategory = '';
 		for (let i in this.data.Movedex) {
 			if (!this.data.Movedex[i]) console.log(i);

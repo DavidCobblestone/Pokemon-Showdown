@@ -26,21 +26,6 @@ let BattleScripts = {
 		lastMove: null,
 	},
 	// BattlePokemon scripts.
-	init() {
-		for (let i in this.data.Pokedex) {
-			delete this.data.Pokedex[i].abilities['H'];
-		}
-		let specialTypes = ['Fire', 'Water', 'Grass', 'Ice', 'Electric', 'Psychic', 'Ghost'];
-		let newCategory = '';
-		for (let i in this.data.Movedex) {
-			if (!this.data.Movedex[i]) console.log(i);
-			if (this.data.Movedex[i].category === 'Status') continue;
-			newCategory = specialTypes.includes(this.data.Movedex[i].type) ? 'Special' : 'Physical';
-			if (newCategory !== this.data.Movedex[i].category) {
-				this.modData('Movedex', i).category = newCategory;
-			}
-		}
-	},
 	pokemon: {
 		getStat(statName, unmodified) {
 			statName = /** @type {StatNameExceptHP} */(toID(statName));
